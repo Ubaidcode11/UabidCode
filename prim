@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main(){
+    bool prime=true;
+    int num;
+    cout<<"enter the num";
+    cin>>num;
+    if(num<1 && num>100){
+        cout<<"inavlid number";
+    }
+    else{
+        if(num==1){
+            prime=false;
+        }
+        else{
+            if((num>2) && (num %2==0))
+            prime=false;
+            if((num>5) && (num%3==0))
+            prime=false;
+        
+
+        }
+        if (prime)
+        cout<<"prime";
+        else
+        cout<<"no";
+    }
+}
+    
